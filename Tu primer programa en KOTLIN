@@ -1,0 +1,64 @@
+fun main() {
+    //PRACTICA
+    println("Hello, Pancho!")
+    
+    //PRIMER EJERCICIO KOTLIN
+    println("")
+    println("1. EJERCICIO")
+    println("1")
+    println("2")
+    println("3")
+    
+    //SEGUNDO EJERCICIO KOTLIN
+    println("")
+    println("2. EJERCICIO")
+    println("I´m")
+    println("learning")
+    println("Kotlin!")
+    
+    //TERCER EJERCICIO KOTLIN MAL
+    println("")
+    println("3. EJERCICIO")
+    println("")
+    println("Mal:")
+    println("")
+    println("Tuesday")
+    println("Thursday")
+    println("Wednesday")
+    println("Friday")
+    println("Monday")
+
+    //EJERCICIO CORREGIDO
+    println("")
+    println("Bien:")
+    println("")
+    println("Monday")
+    println("Tuesday")
+    println("Wednesday")
+    println("Thursday")
+    println("Friday")
+    
+    //CUARTO EJERCICIO KOTLIN
+    println("")
+    println("4. EJERCICIO")
+    println("Tomorrow is rainy")
+    
+    //QUINTO EJERCICIO KOTLIN
+    //printLine("There is a chance of snow")
+    println("")
+    println("5. EJERCICIO")
+    println("There is a chance of snow")
+    
+    //SEXTO EJERCICIO KOTLIN
+    //println("Cloudy") println("Partly Cloudy") println("Windy")
+    println("")
+    println("6. EJERCICIO")
+    println("Cloudy")
+    println("Partly Cloudy")
+    println("Windy")
+    
+    //SEPTIMO EJERCICIO KOTLIN
+    println("")
+    println("7. EJERCICIO")
+    println("How's the weather today?")
+}
