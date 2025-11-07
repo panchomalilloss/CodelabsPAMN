@@ -1,0 +1,156 @@
+fun main() {
+    //IMPRESIÓN DE MENSAJES
+    println("IMPRESIÓN DE MENSAJES:")
+    println("Use the val keyword when the value doesn´t change.")
+    println("Use the var keyword when the value change.")
+    println("When you define a function, you define the parameters that can be passed to it.")
+    println("When you call a function, you pass arguments for the parameters.")
+    println("")
+    
+    //CORRECCIÓN DE UN ERROR DE COMPILACIÓN
+    //println("New chat message from a friend'}
+    println("CORRECCIÓN DE UN ERROR:")
+    println("New chat message from a friend")
+    println("")
+    
+    //PLANTILLAS DE CADENAS
+    println("PLANTILLAS DE CADENAS:")
+    
+    var discountPercentage: Int = 0
+    var offer: String = ""
+    val item = "Google Chromecast"
+    discountPercentage = 20
+    offer = "Sale - Up to $discountPercentage% discount on $item! Hurry up!"
+    println(offer)
+    println("")
+    
+    //CONCATENACIÓN DE CADENAS
+    println("CONCATENACIÓN DE CADENAS:")
+    val numberOfAdults = 20
+    val numberOfKids = 30
+    val total = numberOfAdults + numberOfKids
+    println("The total party size is: $total")
+    println("")
+    
+    //FORMATO DE MENSAJES
+    println("FORMATO DE MENSAJES")
+    val baseSalary = 5000
+    val bonusAmount = 1000
+    val totalSalary = baseSalary + bonusAmount
+    println("Congratulations for your bonus! You will receive a total of $totalSalary (additional bonus).")
+    println("")
+    
+    //IMPLEMENTACIÓN DE OPERACIONES MATEMÁTICAS BÁSICAS
+    println("IMPLEMENTACIÓN DE OPERACIONES MATEMÁTICAS BÁSICAS")
+    val firstNumber = 10
+    val secondNumber = 5
+    val thirdNumber = 8
+    
+    val result = add(firstNumber, secondNumber)
+    val anotherResult = add(firstNumber, thirdNumber)
+    val resultSubtract = subtract(firstNumber, secondNumber)
+
+    println("$firstNumber + $secondNumber = $result")
+    println("$firstNumber + $thirdNumber = $anotherResult")
+    println("$firstNumber - $secondNumber = $resultSubtract")
+    println("")
+    
+    //PARÁMETROS PREDETERMINADOS
+    println("PARÁMETROS PREDETERMINADOS:")
+    val firstUserEmailId = "user_one@gmail.com"
+
+    // The following line of code assumes that you named your parameter as emailId. 
+    // If you named it differently, feel free to update the name.
+    println(displayAlertMessage(email = firstUserEmailId))
+    println()
+
+    val secondUserOperatingSystem = "Windows"
+    val secondUserEmailId = "user_two@gmail.com"
+
+    println(displayAlertMessage(secondUserOperatingSystem, secondUserEmailId))
+    println()
+
+    val thirdUserOperatingSystem = "Mac OS"
+    val thirdUserEmailId = "user_three@gmail.com"
+
+    println(displayAlertMessage(thirdUserOperatingSystem, thirdUserEmailId))
+    println()
+    println("")
+    
+    //PODÓMETRO
+    println("PODÓMETRO:")
+    val steps = 4000
+    val caloriesBurned = pedometerStepsToCalories(steps);
+    println("Walking $steps steps burns $caloriesBurned calories")
+    println("")
+    
+    //COMPARACIÓN DE DOS NÚMEROS
+    println("COMPARACIÓN DE DOS NÚMEROS:")
+    println("He utilizado mas el telefono hoy: ${comparacion(300,250)}")
+    println("He utilizado mas el telefono hoy: ${comparacion(300,300)}")
+    println("He utilizado mas el telefono hoy: ${comparacion(200,220)}")
+    println("")
+    
+    //MOVIMIENTO DE CÓDIGO DUPLICADO
+    println("MOVIMIENTO DE CÓDIGO DUPLICADO:")
+    println("")
+    println("MAL:")
+    println("")    
+    println("City: Ankara")
+    println("Low temperature: 27, High temperature: 31")
+    println("Chance of rain: 82%")
+    println()
+
+    println("City: Tokyo")
+    println("Low temperature: 32, High temperature: 36")
+    println("Chance of rain: 10%")
+    println()
+    
+    println("City: Cape Town")
+    println("Low temperature: 59, High temperature: 64")
+    println("Chance of rain: 2%")
+    println()
+    
+    println("City: Guatemala City")
+    println("Low temperature: 50, High temperature: 55")
+    println("Chance of rain: 7%")
+    println()
+    println("BIEN:")
+    println("")
+    println(duplicados("Ankara", 27, 31, 82))
+    println(duplicados("Tokyo", 32, 36, 10))
+    println(duplicados("Cape Town", 59, 64, 2))
+    println(duplicados("Guatemala City", 50, 55, 7))
+}
+
+//IMPLEMENTACIÓN DE LA FUNCIÓN ADD
+fun add(number1: Int, number2: Int): Int{
+    return number1 + number2
+}
+
+//IMPLEMENTACIÓN DE LA FUNCIÓN SUBTRACT
+fun subtract(number1: Int, number2: Int): Int{
+    return number1 - number2
+}
+
+//IMPLEMENTACIÓN FUNCIÓN DE MENSAJE
+fun displayAlertMessage(sistemaOperativo: String = "Unknown OS", email: String): String{
+    return "There's a new sign-in request on $sistemaOperativo for your Google Account $email."
+}
+
+//FUNCIÓN DE PODÓMETRO
+fun pedometerStepsToCalories(NumberOfSteps: Int): Double {
+    val caloriesBurnedForEachStep = 0.04
+    val totalCaloriesBurned = NumberOfSteps * caloriesBurnedForEachStep
+    return totalCaloriesBurned
+}
+
+//IMPLEMENTACIÓN FUNCIÓN DE COMPARACIÓN
+fun comparacion(timeSpentToday: Int, timeSpentYesterday: Int): Boolean{
+    return timeSpentToday > timeSpentYesterday
+}
+
+//IMPLEMENTACIÓN DE CÓDIGO DE DUPLICADOS
+fun duplicados(ciudad: String, temperaturaMinima: Int, temperaturaMaxima: Int, probabilidad: Int): String{
+    return "City: $ciudad\nLow temperature: $temperaturaMinima, High temperature: $temperaturaMaxima\nChance of rain: $probabilidad%\n"
+}
