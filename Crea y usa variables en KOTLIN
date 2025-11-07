@@ -1,0 +1,68 @@
+fun main() {
+    var count = 10 //Se pone var ya que dicha cuenta va a cambiar con el tiempo
+    val nombre = "Pancho"
+    val nombre2 = "Marta"
+
+    //PRIMERA PARTE
+    println("Tienes count notificaciones sin ver")
+    println("Tienes $count notificaciones sin ver, de $nombre y de $nombre2")
+
+    println("LE HA LLEGADO UNA NOTIFICACIÓN")
+    count++ //Se incrementa 1
+    println("Ahora tiene $count notificaciones sin ver")
+    println("HAS ABIERTO 2 NOTIFICACIONES")
+    count-- //Se decrementa 1
+    count-- //Se decrementa 1
+    println("Ahora tiene $count notificaciones sin ver")
+	println("")
+    
+    //SEGUNDA PARTE
+    println("SUMA DE VALORES")
+    val fotos = 100
+    val fotosEliminadas = 10
+    println("$fotos fotos")
+    println("$fotosEliminadas fotos eliminadas")
+    println("Te quedan ${fotos - fotosEliminadas} fotos en total")
+    
+    //ACTUALIZACIÓN DE VARIABLES
+    println("")
+    println("ACTUALIZACIÓN DE VARIABLES")
+    var cartTotal = 0
+    println("Total: $cartTotal")
+    
+    cartTotal = 20
+    println("Total: $cartTotal")
+    
+    //EXPLORA OTRO TIPO DE VARIABLES
+    println("")
+    println("PRUEBA CON OTROS TIPOS DE VARIABLES")
+    println("")
+    println("DOUBLE")
+    val viaje1 = 3.20
+    val viaje2 = 4.10
+    val viaje3 = 1.72
+    val viajeTotal = viaje1 + viaje2 + viaje3
+    println("$viajeTotal kilometros para llegar al destino")
+        
+    println("")
+    println("STRING")
+    val proximaReunion = "Proxima reunión: "
+    val fecha = "1 de Enero"
+    val localizacion = " en el edificio de informática"
+    val recordatorio = proximaReunion + fecha + localizacion
+    println(recordatorio)
+    println("Say \"hello\"")
+    
+    println("")
+    println("BOOLEAN")
+    val notificacionesActivadas = false
+    println("Están las notificaciones activadas? " + notificacionesActivadas)
+
+	/*
+	 * Esto es una prueba para comentar el código
+	 * Como pone la última parte del codelab
+	 */
+	
+    
+    
+}
