@@ -10,8 +10,7 @@ Breve colección de ejercicios para aprender y practicar conceptos fundamentales
 2. [Ejercicios Incluidos](#ejercicios-incluidos)
 3. [Ejemplo de Código](#ejemplo-de-código)
 4. [Uso](#uso)
-5. [Contribuciones](#contribuciones)
-6. [Licencia](#licencia)
+
 
 ## Descripción
 
